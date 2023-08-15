@@ -46,7 +46,7 @@ public class Main implements BiConsumer<TextIO, RunnerData> {
             textTerminal.getProperties().setPromptColor("cyan");
 
             textTerminal.println("****************************************************");
-            textTerminal.println("Welcome To Trading System");
+            textTerminal.println("*************Welcome To Trading System**************");
             textTerminal.println("****************************************************");
             textTerminal.println("1. User Login");
             textTerminal.println("2. Register New User");

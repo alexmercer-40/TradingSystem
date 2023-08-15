@@ -73,6 +73,7 @@ public class user {
         new Main().accept(textIO, null);
 
         textTerminal.println(rs.getString("full_name")+" Your Details Are :\r\n");
+        textTerminal.println();
         textTerminal.println(" User ID          :       " + rs.getString("id"));
         textTerminal.println(" User Name        :       " + rs.getString("u_name"));
         textTerminal.println(" Full Name        :       " + rs.getString("full_name"));
@@ -80,6 +81,7 @@ public class user {
         textTerminal.println(" Your Stocks      :       " + rs.getInt("c_id"));
         textTerminal.println(" No.of Stocks     :       " + rs.getInt("no_of_stock"));
         textTerminal.println(" Price            :       " + rs.getInt("single_stock"));
+        textTerminal.println();
 
     }
 

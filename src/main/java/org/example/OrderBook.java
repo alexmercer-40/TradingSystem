@@ -38,12 +38,14 @@ public class OrderBook {
 
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                textTerminal.println(" Order ID         :" + rs.getInt(1));
-                textTerminal.println(" User ID          :" + rs.getInt(2));
-                textTerminal.println(" Company ID       :" + rs.getInt(3));
-                textTerminal.println(" No Of Stocks     :" + rs.getInt(4));
-                textTerminal.println(" Stock Price      :" + rs.getDouble(5));
-                textTerminal.println(" Order Type       :" + rs.getString(6));
+                textTerminal.println();
+                textTerminal.println(" Order ID         :       " + rs.getInt(1));
+                textTerminal.println(" User ID          :       " + rs.getInt(2));
+                textTerminal.println(" Company ID       :       " + rs.getInt(3));
+                textTerminal.println(" No Of Stocks     :       " + rs.getInt(4));
+                textTerminal.println(" Stock Price      :       " + rs.getDouble(5));
+                textTerminal.println(" Order Type       :       " + rs.getString(6));
+                textTerminal.println();
 
             }
         }

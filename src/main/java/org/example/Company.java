@@ -83,10 +83,13 @@ public class Company extends DBUtil {
 
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                textTerminal.println((" Company Name :         " + rs.getString("c_name").toUpperCase()));
-                textTerminal.println(" Company ID :           " + rs.getInt("c_id"));
-                textTerminal.println(" Available Stocks :     " + rs.getDouble("a_stock"));
-                textTerminal.println(" Stock Price :          " + rs.getDouble("single_stock"));
+                textTerminal.println();
+                textTerminal.println((" Company Name      :      " + rs.getString("c_name").toUpperCase()));
+                textTerminal.println(" Company ID        :      " + rs.getInt("c_id"));
+                textTerminal.println(" Available Stocks  :      " + rs.getDouble("a_stock"));
+                textTerminal.println(" Stock Price       :      " + rs.getDouble("single_stock"));
+                textTerminal.println();
+
 
             }
         }
